@@ -799,7 +799,7 @@ describe GitVersion do
 
       version = git.get_new_version
       hash = git.current_commit_hash
-      version.should eq("100.100.101-veryveryveryverylongbranchname.0.#{hash}")
+      version.should eq("100.100.101-veryveryveryver.0.#{hash}")
     ensure
       tmp.cleanup
     end
